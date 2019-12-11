@@ -1,0 +1,21 @@
+
+  <table mat-table [dataSource]="bugDetails" class="mat-elevation-z8" style="width: 50%;">
+
+    <ng-container matColumnDef="1">
+      <th mat-header-cell *matHeaderCellDef>Module Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.moduleName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="2">
+      <th mat-header-cell *matHeaderCellDef> Bug Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.bugName}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="3">
+      <th mat-header-cell *matHeaderCellDef> Bug Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.bugStatus}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

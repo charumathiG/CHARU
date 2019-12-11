@@ -1,0 +1,17 @@
+.custom-dialog {
+    margin: -16px;
+    overflow: hidden;
+    padding: 10px   12px 25px 12px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+ .custom-dialog.info{
+  background:#F1F8E9;
+}
+
+.custom-dialog.warn{
+  background: #FFEBEE;
+}
